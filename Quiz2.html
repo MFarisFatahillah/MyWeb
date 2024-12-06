@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>omak diklik lagi Bagus Bagus</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+</style>
+</head>
+<body>
+<p>Siapa pembuat web terbaik disini :-) ??</p>
+<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg">
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 80%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">Peserta lain :-(</button>
+<button id="botao2">Pake nanya inisial yang bikin web ini ;)</button>
+<script>
+const button2 = document.getElementById('botao1');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 70;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao2').addEventListener('click', function() {
+alert('Panitia sudah memilih gwe awokawokawok :-) ');
+});
+</script>
+</body>
+</html>
